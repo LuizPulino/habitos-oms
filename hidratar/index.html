@@ -5,11 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/main.css">
     <script src="../assets/js/zepto.min.js"></script>
-    <script type="module" src="init.js" defer></script>
-    <title>Document</title>
+    <script type="module" src="./main.js" defer></script>
+    <title>Hidratar</title>
 </head>
 <body>
-    <header><nav></nav><h1>Title</h1></header>
-    <main>Content</main>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#agua">Água</a></li>
+                <li><a href="#urina">Urina</a></li>
+                <li><a href="#historico">Histórico</a></li>
+            </ul>
+        </nav>
+        <h1>Caminhar</h1>
+        <h1>Hidratar</h1>
+    </header>
+    <main>
+        <section id="beneficios">
+            <h2>Benefícios</h2>
+            <p>Manter o corpo hidratado é fundamental para ter saúde.</p>
+            <p>Com as mudanças climáticas, manter o nível correto ficou mais difícil ainda.</p>
+        </section>
+        <section id="agua">
+            <h2>Beber água</h2>
+            <form id="form">
+                <label for="quantidade">Quantidade de água (ml)</label>
+                <input type="number" id="quantidade" name="quantidade" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section id="urina">
+            <h2>Cor da urina</h2>
+            <p>Registrar a cor da urina selecionando uma cor ou apontando a câmera do smartphone para o vaso.</p>
+            <p>Só é necessário registrar o código da média das cores dos pixels centrais.</p>
+            <p>Na web, as cores são representadas por códigos RGB. Exemplo: este é o código: #DBD59E <span style="background:#DBD59E">desta cor.</span> </p>
+        </section>
+        <section id="historico">
+            <h2>Histórico</h2>
+            <ul id="lista"></ul>
+        </section>
+        <section id="notfound">
+            <h2>Sessão não encontrada</h2>
+            <p>A sessão <span id="hash"></span> não foi encontrada. Verifique a URL digitada.</p>
+        </section>
+    </main>
 </body>
 </html>
